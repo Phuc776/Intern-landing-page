@@ -20,16 +20,18 @@
                     <img class="navbar-brand-regular" src="assets/img/logo/logo-white.png" alt="brand-logo">
                     <img class="navbar-brand-sticky" src="assets/img/logo/logo.png" alt="sticky brand-logo">
                 </a>
-                <button class="navbar-toggler" type="button">
+                <button class="navbar-toggler" type="button" onclick="toggleActiveClass()">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="navbar-inner">
-                    <button class="navbar-toggler" type="button"><span></span></button>
+                    <button class="navbar-toggler" type="button" onclick="toggleActiveClass()">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <nav>
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown">
-                                <a href="" class="nav-link dropdown-toggle">
+                                <a href="#" class="nav-link dropdown-toggle">
                                     Home
                                 </a>
                                 <ul class="dropdown-menu">
@@ -42,16 +44,16 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">
+                                <a href="#features" class="nav-link">
                                     Features
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="" class="nav-link dropdown-toggle">
+                                <a href="#" class="nav-link dropdown-toggle">
                                     Pages
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li class="dropdown-submenu"><a href="" class="dropdown-item dropdown-toggle">Inner
+                                    <li class="dropdown-submenu"><a href="#" class="dropdown-item dropdown-toggle">Inner
                                             Pages<span class="badge badge-pill badge-warning ml-2">New</span></a>
                                         <ul class="dropdown-menu">
                                             <li>
@@ -74,7 +76,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown-submenu"><a href="" class="dropdown-item dropdown-toggle">Blog
+                                    <li class="dropdown-submenu"><a href="#" class="dropdown-item dropdown-toggle">Blog
                                             Pages</a>
                                         <ul class="dropdown-menu">
                                             <li>
@@ -91,7 +93,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown-submenu"><a href="" class="dropdown-item dropdown-toggle">Blog
+                                    <li class="dropdown-submenu"><a href="#" class="dropdown-item dropdown-toggle">Blog
                                             Details</a>
                                         <ul class="dropdown-menu">
                                             <li>
@@ -102,7 +104,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown-submenu"><a href=""
+                                    <li class="dropdown-submenu"><a href="#"
                                             class="dropdown-item dropdown-toggle">Accounts<span
                                                 class="badge badge-pill badge-warning ml-2">New</span></a>
                                         <ul class="dropdown-menu">
@@ -132,17 +134,17 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link scroll">
+                                <a href="#screenshots" class="nav-link scroll">
                                     Screenshots
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link scroll">
+                                <a href="#pricing" class="nav-link scroll">
                                     Pricing
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link scroll">
+                                <a href="#contact" class="nav-link scroll">
                                     Contact
                                 </a>
                             </li>
@@ -173,7 +175,7 @@
                         </div>
                     </div>
                     <div class="welcome-area-section image-section">
-                        <div class="welcome-thumb mx-auto aos-init aos-animate">
+                        <div class="welcome-thumb mx-auto fadeLeft">
                             <img src="assets/img/welcome/welcome-mockup.png" alt="">
                         </div>
                     </div>
@@ -192,7 +194,7 @@
                     <div class="single-counter text-center">
                         <div class="counter-inner">
                             <div class="counter-item d-inline-block">
-                                <span class="counter fw-7">10</span><span class="fw-7">M</span>
+                                <span class="counter fw-7" data-target="10">10</span><span class="fw-7">M</span>
                             </div>
                             <h5>Users</h5>
                         </div>
@@ -200,7 +202,7 @@
                     <div class="single-counter text-center">
                         <div class="counter-inner">
                             <div class="counter-item d-inline-block">
-                                <span class="counter fw-7">23</span><span class="fw-7">K</span>
+                                <span class="counter fw-7" data-target="23">23</span><span class="fw-7">K</span>
                             </div>
                             <h5>Download</h5>
                         </div>
@@ -208,7 +210,7 @@
                     <div class="single-counter text-center">
                         <div class="counter-inner">
                             <div class="counter-item d-inline-block">
-                                <span class="counter fw-7">9</span><span class="fw-7">M</span>
+                                <span class="counter fw-7" data-target="9">9</span><span class="fw-7">M</span>
                             </div>
                             <h5>Customer</h5>
                         </div>
@@ -216,7 +218,7 @@
                     <div class="single-counter text-center">
                         <div class="counter-inner">
                             <div class="counter-item d-inline-block">
-                                <span class="counter fw-7">12</span><span class="fw-7">K</span>
+                                <span class="counter fw-7" data-target="12">12</span><span class="fw-7">K</span>
                             </div>
                             <h5>Developer</h5>
                         </div>
@@ -249,7 +251,7 @@
                 </div>
                 <div class="row">
                     <div class="feature-column">
-                        <div class="image-box text-center p-5">
+                        <div class="image-box text-center p-5 fadeInLeft">
                             <div class="featured-img mb-3">
                                 <img src="assets/img/icon/featured-img/layers.png" alt="" class="avatar-sm">
                             </div>
@@ -261,7 +263,7 @@
                         </div>
                     </div>
                     <div class="feature-column">
-                        <div class="image-box text-center p-5">
+                        <div class="image-box text-center p-5 fadeInUp">
                             <div class="featured-img mb-3">
                                 <img src="assets/img/icon/featured-img/speak.png" alt="" class="avatar-sm">
                             </div>
@@ -273,7 +275,7 @@
                         </div>
                     </div>
                     <div class="feature-column">
-                        <div class="image-box text-center p-5">
+                        <div class="image-box text-center p-5 fadeInRight">
                             <div class="featured-img mb-3">
                                 <img src="assets/img/icon/featured-img/lock.png" alt="" class="avatar-sm">
                             </div>
@@ -693,7 +695,7 @@
                         <div class="row price-plan-wrapper">
                             <div class="price-plan-row">
                                 <!-- Single Price Plan -->
-                                <div class="single-price-plan text-center p-5">
+                                <div class="single-price-plan text-center p-5 fadeInLeft">
                                     <!-- Plan Thumb -->
                                     <div class="plan-thumb">
                                         <img class="avatar-lg" src="assets/img/pricing/basic.png" alt="">
@@ -723,7 +725,7 @@
                             </div>
                             <div class="price-plan-row mt-4 mt-md-0">
                                 <!-- Single Price Plan -->
-                                <div class="single-price-plan text-center p-5 wow fadeInRight" data-aos-duration="2s"
+                                <div class="single-price-plan text-center p-5 fadeInRight" data-aos-duration="2s"
                                     data-wow-delay="0.4s">
                                     <!-- Plan Thumb -->
                                     <div class="plan-thumb">
@@ -1278,7 +1280,7 @@
         </footer>
         <!-- Footer Area End -->
     </div>
-    <script src="assets/js/jquery/jquery.min.js"></script>
+    <!-- Active js -->
     <script src="assets/js/active.js"></script>
 </body>
 
